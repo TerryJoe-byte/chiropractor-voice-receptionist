@@ -1,4 +1,3 @@
-cat > server.js <<'EOF'
 import express from 'express';
 import bodyParser from 'body-parser';
 import twilio from 'twilio';
@@ -104,7 +103,5 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`🚀 Server running on port ${port}`);
-  console.log(`📞 Webhook: ${process.env.BASE_URL || 'http://localhost:' + port}/voice/incoming`);
+  console.log(`Server running on port ${port}`);
 });
-EOF
