@@ -1,0 +1,10 @@
+{
+  "name": "voice-receptionist",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "googleapis": "^170.0.0",
+    "open": "^11.0.0"
+  }
+}
+
